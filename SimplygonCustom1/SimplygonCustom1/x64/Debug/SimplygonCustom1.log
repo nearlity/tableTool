@@ -1,0 +1,18 @@
+﻿生成启动时间为 2016/10/8 18:14:25。
+     1>项目“F:\xsfhCode\SimplygonCustom1\SimplygonCustom1\SimplygonCustom1.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         D:\VStudio2013\VC\bin\x86_amd64\CL.exe /c /Zi /nologo /W3 /WX- /sdl /Od /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D SIMPLYGONCUSTOM1_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Debug\\" /Fd"x64\Debug\vc120.pdb" /Gd /TP /errorReport:prompt Entry.cpp Example.cpp
+         Example.cpp
+         正在生成代码...
+         正在编译...
+         Entry.cpp
+         正在生成代码...
+       Link:
+         D:\VStudio2013\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"F:\xsfhCode\SimplygonCustom1\x64\Debug\SimplygonCustom1.dll" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"F:\xsfhCode\SimplygonCustom1\x64\Debug\SimplygonCustom1.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:\xsfhCode\SimplygonCustom1\x64\Debug\SimplygonCustom1.lib" /MACHINE:X64 /DLL x64\Debug\Entry.obj
+         x64\Debug\Example.obj
+         SimplygonCustom1.vcxproj -> F:\xsfhCode\SimplygonCustom1\x64\Debug\SimplygonCustom1.dll
+     1>已完成生成项目“F:\xsfhCode\SimplygonCustom1\SimplygonCustom1\SimplygonCustom1.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:15.53
