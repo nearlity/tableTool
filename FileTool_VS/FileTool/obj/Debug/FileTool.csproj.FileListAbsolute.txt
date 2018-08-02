@@ -1,0 +1,8 @@
+F:\x雪山飞狐源码sfhCode\FileTool\FileTool\bin\Debug\FileTool.exe.config
+F:\x雪山飞狐源码sfhCode\FileTool\FileTool\obj\Debug\FileTool.csprojResolveAssemblyReference.cache
+F:\x雪山飞狐源码sfhCode\FileTool\FileTool\bin\Debug\FileTool.exe
+F:\x雪山飞狐源码sfhCode\FileTool\FileTool\bin\Debug\FileTool.pdb
+F:\x雪山飞狐源码sfhCode\FileTool\FileTool\bin\Debug\LuaInterface.dll
+F:\x雪山飞狐源码sfhCode\FileTool\FileTool\bin\Debug\lua51.dll
+F:\x雪山飞狐源码sfhCode\FileTool\FileTool\obj\Debug\FileTool.exe
+F:\x雪山飞狐源码sfhCode\FileTool\FileTool\obj\Debug\FileTool.pdb

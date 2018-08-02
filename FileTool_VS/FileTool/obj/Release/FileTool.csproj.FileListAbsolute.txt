@@ -1,0 +1,15 @@
+F:\x雪山飞狐源码sfhCode\FileTool\FileTool\bin\Release\FileTool.exe.config
+F:\x雪山飞狐源码sfhCode\FileTool\FileTool\bin\Release\FileTool.exe
+F:\x雪山飞狐源码sfhCode\FileTool\FileTool\bin\Release\FileTool.pdb
+F:\x雪山飞狐源码sfhCode\FileTool\FileTool\bin\Release\LuaInterface.dll
+F:\x雪山飞狐源码sfhCode\FileTool\FileTool\bin\Release\lua51.dll
+F:\x雪山飞狐源码sfhCode\FileTool\FileTool\obj\Release\FileTool.exe
+F:\x雪山飞狐源码sfhCode\FileTool\FileTool\obj\Release\FileTool.pdb
+F:\xsfhCode\FileTool_VS\FileTool\bin\Release\FileTool.exe.config
+F:\xsfhCode\FileTool_VS\FileTool\obj\Release\FileTool.exe
+F:\xsfhCode\FileTool_VS\FileTool\obj\Release\FileTool.pdb
+F:\xsfhCode\FileTool_VS\FileTool\bin\Release\FileTool.exe
+F:\xsfhCode\FileTool_VS\FileTool\bin\Release\FileTool.pdb
+F:\xsfhCode\FileTool_VS\FileTool\bin\Release\LuaInterface.dll
+F:\xsfhCode\FileTool_VS\FileTool\bin\Release\lua51.dll
+F:\xsfhCode\FileTool_VS\FileTool\obj\Release\FileTool.csprojResolveAssemblyReference.cache
