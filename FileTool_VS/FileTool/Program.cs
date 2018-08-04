@@ -130,8 +130,11 @@ namespace TabFileTool
         {
             FileInfo fileInfo = new FileInfo(filePath);
             FileStream fs = new FileStream(filePath, FileMode.Open, FileAccess.Read, FileShare.ReadWrite);
+            byte[] temp = new byte[fs.Length];
+            fs.Read(temp, 0, (int)fs.Length);
+
             StreamReader sr = new StreamReader(fs);
-            string content = sr.ReadToEnd();
+            string content = GetText(temp);
             sr.Close();
             fs.Close();
 
@@ -168,7 +171,7 @@ namespace TabFileTool
                     case Config.ExportType.DataTabFile:
                         exportContent = tabFile.ExportDataTabFile();
                         string tabFilePath = Config.Instance.GetParam(Config.OutputTabFilePath) + dirName + "/" + fileName + ".txt";
-                        SaveFile(tabFilePath, exportContent, new UTF8Encoding(false));
+                        SaveFile(tabFilePath, exportContent, Encoding.UTF8);
                         break;
                     case Config.ExportType.Lua:
                         string moduleName = null;
@@ -178,13 +181,80 @@ namespace TabFileTool
                         luaFile.UnpackFromTabFile(tabFile);
                         exportContent = luaFile.ExportDataLuaFile(fileName, moduleName);
                         string luaFilePath = Config.Instance.GetParam(Config.OutputLuaFilePath) + dirName + "/" + fileName + ".lua";
-                        SaveFile(luaFilePath, exportContent, new UTF8Encoding(false));
+                        SaveFile(luaFilePath, exportContent, Encoding.UTF8);
                         break;
                 }
             }
             System.Console.WriteLine(fileInfo.Name + "---->导表完成!");
         }
-
+        private static bool isUtf8(byte[] buff)
+        {
+            for (int i = 0; i < buff.Length; i++)
+            {
+                if ((buff[i] & 0xE0) == 0xC0) // 110x xxxx 10xx xxxx
+                {
+                    if ((buff[i + 1] & 0x80) != 0x80)
+                    {
+                        return false;
+                    }
+                }
+                else if ((buff[i] & 0xF0) == 0xE0) // 1110 xxxx 10xx xxxx 10xx xxxx
+                {
+                    if ((buff[i + 1] & 0x80) != 0x80 || (buff[i + 2] & 0x80) != 0x80)
+                    {
+                        return false;
+                    }
+                }
+                else if ((buff[i] & 0xF8) == 0xF0) // 1111 0xxx 10xx xxxx 10xx xxxx 10xx xxxx
+                {
+                    if ((buff[i + 1] & 0x80) != 0x80 || (buff[i + 2] & 0x80) != 0x80 || (buff[i + 3] & 0x80) != 0x80)
+                    {
+                        return false;
+                    }
+                }
+            }
+            return true;
+        }
+        // news.sohu.com
+        private static bool isGBK(byte[] buff)
+        {
+            return false;
+        }
+        public static string GetText(byte[] buff)
+        {
+            string strReslut = string.Empty;
+            if (buff.Length > 3)
+            {
+                if (buff[0] == 239 && buff[1] == 187 && buff[2] == 191)
+                {// utf-8
+                    strReslut = Encoding.UTF8.GetString(buff);
+                }
+                else if (buff[0] == 254 && buff[1] == 255)
+                {// big endian unicode
+                    strReslut = Encoding.BigEndianUnicode.GetString(buff);
+                }
+                else if (buff[0] == 255 && buff[1] == 254)
+                {// unicode
+                    strReslut = Encoding.Unicode.GetString(buff);
+                }
+                else if (isUtf8(buff))
+                {// utf-8
+                    strReslut = Encoding.UTF8.GetString(buff);
+                }
+                else
+                {// ansi
+                    strReslut = Encoding.Default.GetString(buff);
+                }
+            }
+            return strReslut;
+        }
+        public static string get_uft8(string unicodeString)
+        {
+            UTF8Encoding utf8 = new UTF8Encoding();
+            Byte[] encodedBytes = utf8.GetBytes(unicodeString);
+            String decodedString = utf8.GetString(encodedBytes);
+            return decodedString;
+        }
         static void SaveFile(string filePath, string content, Encoding encode)
         {
             string dirPath = null;
