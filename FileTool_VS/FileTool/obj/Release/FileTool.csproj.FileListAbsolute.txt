@@ -20,3 +20,4 @@ C:\Users\xiaoyongqiang\Documents\GitHub\tableTool\FileTool_VS\FileTool\bin\Relea
 C:\Users\xiaoyongqiang\Documents\GitHub\tableTool\FileTool_VS\FileTool\bin\Release\lua51.dll
 C:\Users\xiaoyongqiang\Documents\GitHub\tableTool\FileTool_VS\FileTool\obj\Release\FileTool.exe
 C:\Users\xiaoyongqiang\Documents\GitHub\tableTool\FileTool_VS\FileTool\obj\Release\FileTool.pdb
+C:\Users\xiaoyongqiang\Documents\GitHub\tableTool\FileTool_VS\FileTool\obj\Release\FileTool.csprojResolveAssemblyReference.cache
