@@ -231,6 +231,7 @@ namespace TabFileTool
 
             public string ExportDef(string structTemplate, bool needIsNullFun = false)
             {
+                structTemplate = structTemplate.Replace("\r", "\n");
                 int startIndex = structTemplate.IndexOf("\n") + 1;
                 int endIndex = structTemplate.IndexOf("}\n", startIndex) + 2;
                 structTemplate = structTemplate.Substring(startIndex, endIndex - startIndex);

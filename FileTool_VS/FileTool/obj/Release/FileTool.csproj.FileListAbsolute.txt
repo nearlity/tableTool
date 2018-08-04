@@ -13,3 +13,10 @@ F:\xsfhCode\FileTool_VS\FileTool\bin\Release\FileTool.pdb
 F:\xsfhCode\FileTool_VS\FileTool\bin\Release\LuaInterface.dll
 F:\xsfhCode\FileTool_VS\FileTool\bin\Release\lua51.dll
 F:\xsfhCode\FileTool_VS\FileTool\obj\Release\FileTool.csprojResolveAssemblyReference.cache
+C:\Users\xiaoyongqiang\Documents\GitHub\tableTool\FileTool_VS\FileTool\bin\Release\FileTool.exe.config
+C:\Users\xiaoyongqiang\Documents\GitHub\tableTool\FileTool_VS\FileTool\bin\Release\FileTool.exe
+C:\Users\xiaoyongqiang\Documents\GitHub\tableTool\FileTool_VS\FileTool\bin\Release\FileTool.pdb
+C:\Users\xiaoyongqiang\Documents\GitHub\tableTool\FileTool_VS\FileTool\bin\Release\LuaInterface.dll
+C:\Users\xiaoyongqiang\Documents\GitHub\tableTool\FileTool_VS\FileTool\bin\Release\lua51.dll
+C:\Users\xiaoyongqiang\Documents\GitHub\tableTool\FileTool_VS\FileTool\obj\Release\FileTool.exe
+C:\Users\xiaoyongqiang\Documents\GitHub\tableTool\FileTool_VS\FileTool\obj\Release\FileTool.pdb
