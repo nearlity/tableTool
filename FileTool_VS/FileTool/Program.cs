@@ -137,7 +137,6 @@ namespace TabFileTool
             string content = GetText(temp);
             sr.Close();
             fs.Close();
-
             TabFile tabFile = new TabFile();
             string ret = tabFile.Check(content);
             if (!string.IsNullOrEmpty(ret))

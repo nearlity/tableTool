@@ -74,8 +74,8 @@ namespace TabFileTool
                 string line = lines[i];
                 if (string.IsNullOrEmpty(line))
                     continue;
-
-                if (line.StartsWith("//"))
+                var tempNum = line.IndexOf("//");
+                if (line.StartsWith("//") ||( tempNum > 0 && tempNum < 10))
                 {
                     notes.Add(line);
                     continue;
